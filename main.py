@@ -384,9 +384,9 @@ def main():
             })
         # 3. Sorting & Sending
         scored_jobs.sort(key=lambda x: x['score'], reverse=True)
-        top_15 = scored_jobs[:15]
+        top_20 = scored_jobs[:20]
 
-    send_email(top_15)
+    send_email(top_20)
 
 if __name__ == "__main__":
     main()
