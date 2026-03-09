@@ -38,15 +38,27 @@ load_dotenv()
 # Configuration
 # Support multiple keywords (each term will be searched and then results will be merged & de-duplicated).
 
+# SEARCH_TERMS = [
+#    "Data Engineer",
+#    "Analytics Engineer",
+#    "AI Engineer",
+#    "Machine Learning Engineer",
+#    "Data Platform Engineer",
+#    "Platform Engineer"
+#]
+# LOCATIONS = ["Canada", "Toronto, Canada", "Toronto, ON"]
+
 SEARCH_TERMS = [
-    "Data Engineer",
-    "Analytics Engineer",
-    "AI Engineer",
-    "Machine Learning Engineer",
-    "Data Platform Engineer",
-    "Platform Engineer"
+    "UI Designer",
+    "UX Designer",
+    "Product Designer",
+    "User Experience Designer",
+    "UI/UX Designer",
+    "User Interface Designer"
 ]
-LOCATIONS = ["Canada", "Toronto, Canada", "Toronto, ON"]
+LOCATIONS = ["Canada", "Toronto, ON", "Vancouver, BC"]
+
+
 RESULT_LIMIT = 40
 HOURS_OLD = 72
 PROXY_URL = os.getenv("PROXY_URL", None)
