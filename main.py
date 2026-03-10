@@ -267,8 +267,8 @@ def send_email(top_jobs: List[dict]):
         print("📭  No matching jobs to send.")
         return
 
-    sender = os.getenv("EMAIL_SENDER")
-    password = os.getenv("EMAIL_PASSWORD")
+    sender = os.getenv("EMAIL_SENDER_LALA")
+    password = os.getenv("EMAIL_PASSWORD_LALA")
     receiver = os.getenv("EMAIL_RECEIVER")
 
     subject = f"🚀 CareerScout: Top {len(top_jobs)} Jobs for {datetime.now().strftime('%Y-%m-%d')}"
