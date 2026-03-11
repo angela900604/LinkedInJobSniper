@@ -53,9 +53,9 @@ RESULT_LIMIT = 40
 HOURS_OLD = 72
 PROXY_URL = os.getenv("PROXY_URL_LALA", None)
 RESUME = os.getenv("RESUME_TEXT_LALA", None)
-API_KEY = os.getenv("OPENAI_API_KEY_LALA", None)
-BASE_URL = os.getenv("API_BASE")
-CRITERIA = os.getenv("CRITERIA", "")
+API_KEY = os.getenv("OPENAI_API_KEY_LALA")
+BASE_URL = os.getenv("API_BASE")  # keep as requested
+CRITERIA = os.getenv("CRITERIA_LALA", "")
 
 print("RESUME raw:", repr(RESUME))
 print("RESUME exists:", bool(RESUME))
@@ -85,7 +85,8 @@ class JobEvaluation(BaseModel):
 llm = ChatOpenAI(
     model="gpt-5-mini",
     temperature=0,
-    openai_api_key=API_KEY,
+    api_key=API_KEY,
+    base_url=BASE_URL,
 )
 
 # structured output
