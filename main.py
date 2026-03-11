@@ -85,8 +85,7 @@ class JobEvaluation(BaseModel):
 llm = ChatOpenAI(
     model="gpt-5-mini",
     temperature=0,
-    api_key=API_KEY,
-    base_url=BASE_URL,
+    openai_api_key=API_KEY,
 )
 
 # structured output
