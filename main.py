@@ -59,6 +59,9 @@ API_KEY = os.getenv("OPENAI_API_KEY_LALA")
 BASE_URL = os.getenv("API_BASE_LALA")
 CRITERIA = os.getenv("CRITERIA_LALA", "")
 
+print("RESUME raw:", repr(RESUME))
+print("RESUME exists:", bool(RESUME))
+
 # Define the output data structure from AI
 class JobEvaluation(BaseModel):
     """
