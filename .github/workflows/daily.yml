@@ -5,7 +5,7 @@ on:
   schedule:
     # Schedule: Runs at 00:00 UTC daily
     # (Equals 08:00 AM Singapore/Beijing Time due to UTC+8)
-    - cron: '0 23 * * *'
+    - cron: '0 21 * * *'
   # Allows manual triggering via the 'Run workflow' button (for testing)
   workflow_dispatch:
 
