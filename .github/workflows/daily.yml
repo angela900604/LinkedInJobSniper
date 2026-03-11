@@ -40,7 +40,7 @@ jobs:
           API_BASE: ${{ secrets.API_BASE }}
           EMAIL_SENDER_LALA: ${{ secrets.EMAIL_SENDER_LALA }}
           EMAIL_PASSWORD_LALA: ${{ secrets.EMAIL_PASSWORD_LALA }}
-          EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
+          EMAIL_RECEIVER_LALA: ${{ secrets.EMAIL_RECEIVER_LALA }}
           PROXY_URL_LALA: ${{ secrets.PROXY_URL_LALA }}
           RESUME_TEXT_LALA: ${{ secrets.RESUME_TEXT_LALA }}
           CRITERIA_LALA: ${{ secrets.CRITERIA_LALA }}
