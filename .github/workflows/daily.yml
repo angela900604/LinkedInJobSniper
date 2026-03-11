@@ -36,14 +36,14 @@ jobs:
       - name: Run Job Agent
         # CRITICAL: Inject GitHub Secrets into environment variables
         env:
-          OPENAI_API_KEY: ${{ secrets.API_KEY_LALA }}
+          OPENAI_API_KEY_LALA: ${{ secrets.API_KEY_LALA }}
           API_BASE: ${{ secrets.API_BASE }}
-          EMAIL_SENDER: ${{ secrets.EMAIL_SENDER_LALA }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD_LALA }}
+          EMAIL_SENDER_LALA: ${{ secrets.EMAIL_SENDER_LALA }}
+          EMAIL_PASSWORD_LALA: ${{ secrets.EMAIL_PASSWORD_LALA }}
           EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
-          PROXY_URL: ${{ secrets.PROXY_URL_LALA }}
-          RESUME_TEXT: ${{ secrets.RESUME_TEXT_LALA }}
-          CRITERIA: ${{ secrets.CRITERIA_LALA }}
+          PROXY_URL_LALA: ${{ secrets.PROXY_URL_LALA }}
+          RESUME_TEXT_LALA: ${{ secrets.RESUME_TEXT_LALA }}
+          CRITERIA_LALA: ${{ secrets.CRITERIA_LALA }}
           GCP_CREDENTIALS_JSON: ${{ secrets.GCP_CREDENTIALS_JSON }}
           RESUME_FILE_ID: ${{ secrets.RESUME_FILE_ID }}
         run: python main.py
