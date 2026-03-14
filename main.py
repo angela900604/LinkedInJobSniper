@@ -50,7 +50,7 @@ SEARCH_TERMS = [
 LOCATIONS = ["Canada", "Toronto, ON", "Vancouver, BC"]
 
 RESULT_LIMIT = 40
-HOURS_OLD = 72
+HOURS_OLD = 10
 PROXY_URL = os.getenv("PROXY_URL_LALA", None)
 RESUME = os.getenv("RESUME_TEXT_LALA", None)
 API_KEY = os.getenv("OPENAI_API_KEY_LALA")
